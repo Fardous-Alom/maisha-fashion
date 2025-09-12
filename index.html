@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://preline.co/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Explore the Coffee Shop demo with a clean product detail page and flexible checkout options for modern, clean, and minimal e-commerce experiences.">
+
+  <meta name="twitter:site" content="@preline">
+  <meta name="twitter:creator" content="@preline">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Coffee Shop Tailwind CSS Template | Preline UI, crafted with Tailwind CSS">
+  <meta name="twitter:description"
+    content="Explore the Coffee Shop demo with a clean product detail page and flexible checkout options for modern, clean, and minimal e-commerce experiences.">
+  <meta name="twitter:image" content="https://preline.co/assets/img/og-image.png">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+    nonce="YOUR_NONCE_VALUE"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <meta property="og:url" content="https://preline.co/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Preline">
+  <meta property="og:title" content="Coffee Shop Tailwind CSS Template | Preline UI, crafted with Tailwind CSS">
+  <meta property="og:description"
+    content="Explore the Coffee Shop demo with a clean product detail page and flexible checkout options for modern, clean, and minimal e-commerce experiences.">
+  <meta property="og:image" content="https://preline.co/assets/img/og-image.png">
+
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Title -->
+  <title>Coffee Shop Tailwind CSS Template | Preline UI, crafted with Tailwind CSS</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Theme Check and Update -->
+  <script>
+    const html = document.querySelector('html');
+    const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const isDarkOrAuto = localStorage.getItem('hs_theme') === 'dark' || (localStorage.getItem('hs_theme') === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+    if (isLightOrAuto && html.classList.contains('dark')) html.classList.remove('dark');
+    else if (isDarkOrAuto && html.classList.contains('light')) html.classList.remove('light');
+    else if (isDarkOrAuto && !html.classList.contains('dark')) html.classList.add('dark');
+    else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
+  </script>
+
+  <!-- CSS HS -->
+  <link rel="stylesheet" href="https://preline.co/assets/css/main.css?v=3.0.1">
+</head>
+
+<body class="dark:bg-neutral-900">
+  <!-- Announcement Banner -->
+  <div class="py-2 bg-black text-center dark:bg-white">
+    <div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+      <p class="text-sm text-white dark:text-black">
+        Free delivery&nbsp;on orders over $5000
+      </p>
+    </div>
+  </div>
+  <!-- End Announcement Banner -->
+
+  <!-- ========== HEADER ========== -->
+  <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-7">
+    <nav
+      class="relative max-w-7xl w-full flex flex-wrap lg:grid lg:grid-cols-12 basis-full items-center px-4 md:px-6 lg:px-8 mx-auto">
+      <div class="lg:col-span-3 flex items-center">
+        <!-- Logo -->
+        <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
+          href="index.html" aria-label="Preline">
+          <h1 class="text-2xl font-bold">Maisha Fashion</h1>
+        </a>
+        <!-- End Logo -->
+      </div>
+
+      <!-- Button Group -->
+      <!-- <div class="flex items-center gap-x-1 lg:gap-x-2 ms-auto py-1 lg:ps-6 lg:order-3 lg:col-span-3">
+        <button type="button"
+          class="size-9.5 relative flex justify-center items-center rounded-xl bg-white border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white dark:focus:text-white">
+          <span class="sr-only">Search</span>
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m21 21-4.34-4.34" />
+            <circle cx="11" cy="11" r="8" />
+          </svg>
+        </button>
+        <button type="button"
+          class="size-9.5 relative flex justify-center items-center rounded-xl bg-white border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white dark:focus:text-white">
+          <span class="sr-only">Cart</span>
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+          </svg>
+        </button>
+        <button type="button"
+          class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium text-nowrap rounded-xl border border-transparent bg-yellow-400 text-black hover:bg-yellow-500 focus:outline-hidden focus:bg-yellow-500 transition disabled:opacity-50 disabled:pointer-events-none">
+          Sign in
+        </button>
+
+        <div class="lg:hidden">
+          <button type="button"
+            class="hs-collapse-toggle size-9.5 flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            id="hs-pro-hcail-collapse" aria-expanded="false" aria-controls="hs-pro-hcail" aria-label="Toggle navigation"
+            data-hs-collapse="#hs-pro-hcail">
+            <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="3" x2="21" y1="6" y2="6" />
+              <line x1="3" x2="21" y1="12" y2="12" />
+              <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+            <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+      </div> -->
+      <!-- End Button Group -->
+
+      <!-- Collapse -->
+      <div id="hs-pro-hcail"
+        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block lg:w-auto lg:basis-auto lg:order-2 lg:col-span-6"
+        aria-labelledby="hs-pro-hcail-collapse">
+        <div
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
+          <div>
+            <a class="relative inline-block text-black focus:outline-hidden before:absolute before:bottom-0.5 before:start-0 before:-z-1 before:w-full before:h-1 before:bg-yellow-400 dark:text-white"
+              href="#" aria-current="page">Home</a>
+          </div>
+          <div>
+            <a class="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+              href="#products">Products</a>
+          </div>
+          <div>
+            <a class="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+              href="#about">About</a>
+          </div>
+          <div>
+            <a class="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+              href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Collapse -->
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content">
+    <!-- Hero -->
+    <div class="px-4 sm:px-6 lg:px-8 ">
+      <div class="h-120 md:h-[80dvh] flex flex-col bg-cover bg-center bg-no-repeat rounded-2xl">
+        <img src="./assets/img/banner/1.png" alt="banner" class="w-full h-full object-cover rounded-xl">
+        <!-- <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+          <h1 class="text-xl md:text-3xl lg:text-5xl text-white">
+            Bringing Art to everything
+          </h1>
+        </div> -->
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Works -->
+    <div class="px-4 sm:px-6 lg:px-8 py-12 lg:py-24 mx-auto" id="products">
+      <div class="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
+        <h1 class="font-medium text-black text-3xl sm:text-4xl dark:text-white">
+          Our Latest Collection
+        </h1>
+      </div>
+
+      <!-- Card Grid -->
+      <div class="">
+        <!-- Card -->
+        <div class="">
+          <!-- Swiper -->
+          <div class="swiper productSwiper rounded-2xl overflow-hidden">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/1.png" alt="Product Image 1">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/2.png" alt="Product Image 2">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/3.png" alt="Product Image 3">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/4.png" alt="Product Image 4">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/5.png" alt="Product Image 5">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/7.png" alt="Product Image 7">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/8.png" alt="Product Image 8">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/9.png" alt="Product Image 9">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/10.png" alt="Product Image 10">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/11.png" alt="Product Image 11">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/12.png" alt="Product Image 12">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/13.png" alt="Product Image 13">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full h-full object-cover" src="./assets/img/products/6.png" alt="Product Image 6">
+              </div>
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next rounded-full bg-gray-100 py-3 px-2"></div>
+            <div class="swiper-button-prev rounded-full bg-gray-100 py-3 px-2"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- End Swiper -->
+
+          <!-- Swiper Script -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              new Swiper('.productSwiper', {
+                loop: true,
+                slidesPerView: 5,      // show 5 images
+                slidesPerGroup: 1,     // slide 1 image at a time
+                spaceBetween: 20,      // gap between slides
+                autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
+                },
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+            });
+          </script>
+        </div>
+        <!-- End Card -->
+      </div>
+      <!-- End Card Grid -->
+    </div>
+    <!-- End Works -->
+
+
+    <!-- Testimonials -->
+    <div class="py-10 md:py-16 lg:py-20 bg-orange-100" id="about">
+      <div class="px-4 sm:px-6 lg:px-8">
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 md:items-center">
+          <div
+            class="relative flex items-center justify-center">
+            <!-- Facebook Video Embed -->
+            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100063726571373%2Fvideos%2F1278419583492321%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden; border-radius: 10px; " scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+          </div>
+          <!-- End Col -->
+
+          <div class="pt-10 md:p-10">
+            <blockquote class="max-w-4xl mx-auto">
+              <p class="mb-6 md:text-lg">
+                A Family Tradition of Rich, Aromatic Coffee
+              </p>
+
+              <p class="text-xl sm:text-2xl lg:text-3xl lg:leading-normal text-gray-800 dark:text-neutral-200">
+                Coffee has the power to connect generations – whether it's learning grandma's brewing techniques and
+                trying to perfect them just like her or the intense memories triggered by the rich flavors and aromas of
+                our favorite coffee blends.
+              </p>
+
+              <footer class="mt-6 md:mt-10">
+                <div class="border-neutral-700">
+                  <a href="https://www.facebook.com/profile.php?id=100063726571373&rdid=zz3wgri7DJCXHmFx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CtKuCEsMQ%2F#" type="button"
+                    class="group inline-flex items-center gap-x-3 text-gray-800 dark:text-neutral-200 text-sm focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none">
+                    <span
+                      class="">
+                      <i class="fa-brands fa-square-facebook text-4xl text-blue-600"></i>
+                    </span>
+                    Watch More Product Video
+                  </a>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+      </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Contact -->
+    <div class="max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-24 mx-auto" id="contact">
+      <div class="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
+        <h2 class="font-medium text-black text-2xl sm:text-4xl dark:text-white">
+          Contacts
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-6 md:gap-8 lg:gap-12">
+        <div class="aspect-w-16 aspect-h-6 lg:aspect-h-14 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
+          <img
+            class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
+            src="./assets/img/contact/1.png"
+            alt="Contacts Image">
+        </div>
+        <!-- End Col -->
+
+        <div class="space-y-8 lg:space-y-16">
+          <div>
+            <h3 class="mb-5 font-semibold text-black dark:text-white">
+              Our address
+            </h3>
+
+            <!-- Grid -->
+            <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+              <div class="flex gap-4">
+                <svg class="shrink-0 size-5 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+
+                <div class="grow">
+                  <p class="text-sm text-gray-600 dark:text-neutral-400">
+                   New Market, Dhaka
+                  </p>
+                  <address class="mt-1 text-black not-italic dark:text-white">
+                    ৩৯/বি-৬ চিশতিয়া মার্কেট (নিউ গাউছিয়া মার্কেট) নিচতলা, ঢাকা-১২০৫
+                  </address>
+                </div>
+              </div>
+            </div>
+            <!-- End Grid -->
+          </div>
+
+          <div>
+            <h3 class="mb-5 font-semibold text-black dark:text-white">
+              Our contacts
+            </h3>
+
+            <!-- Grid -->
+            <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+              <div class="flex gap-4">
+                <svg class="shrink-0 size-5 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg"
+                  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+
+                <div class="grow">
+                  <p class="text-sm text-gray-600 dark:text-neutral-400">
+                    Call us
+                  </p>
+                  <p>
+                    <a class="relative inline-block font-medium text-black "
+                      href="tel:+8801795337582">
+                      +88 01795-337582
+                    </a><br>
+                    <a class="relative inline-block font-medium text-black "
+                      href="tel:+8801833010119">
+                      +88 01833-010119
+                    </a><br>
+                    <a class="relative inline-block font-medium text-black "
+                      href="tel:+8801814932807">
+                      +88 01814-932807
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Grid -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+    </div>
+    <!-- End Contact -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="mt-auto border-t md:border-t-0 border-gray-200 dark:border-neutral-700">
+    <div class="w-full max-w-7xl py-10 md:pt-0 px-4 sm:px-6 lg:px-8 mx-auto">
+      <!-- Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-between gap-5">
+        <div class="text-center md:text-start">
+          <!-- Logo -->
+          <h1 class="text-2xl font-bold">Maisha Fashion</h1>
+          <!-- End Logo -->
+        </div>
+        <!-- End Col -->
+
+        <!-- <ul class="text-center">
+          <li
+            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-black dark:before:text-white">
+            <a class="inline-flex gap-x-2 text-sm text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+              href="#">
+              About
+            </a>
+          </li>
+          <li
+            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-black dark:before:text-white">
+            <a class="inline-flex gap-x-2 text-sm text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+              href="#">
+              Services
+            </a>
+          </li>
+          <li
+            class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-black dark:before:text-white">
+            <a class="inline-flex gap-x-2 text-sm text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+              href="#">
+              Blog
+            </a>
+          </li>
+        </ul> -->
+        <!-- End Col -->
+
+        <!-- Social Brands -->
+        <div class="text-center md:text-end space-x-2">
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-black hover:text-gray-600 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:text-neutral-400"
+            href="https://www.facebook.com/profile.php?id=100063726571373&rdid=zz3wgri7DJCXHmFx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CtKuCEsMQ%2F#">
+            <i class="fa-brands fa-facebook-f text-2xl text-blue-600"></i>
+          </a>
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-black hover:text-gray-600 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:text-neutral-400"
+            href="https://wa.me/8801795337582">
+            <i class="fa-brands fa-whatsapp text-2xl text-green-600"></i>
+          </a>
+          <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-black hover:text-gray-600 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:text-neutral-400"
+            href="https://www.youtube.com/@jn.bdcollection">
+            <i class="fa-brands fa-youtube text-2xl text-red-600"></i>
+          </a>
+        </div>
+        <!-- End Social Brands -->
+      </div>
+      <!-- End Grid -->
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- JS Implementing Plugins -->
+
+  <!-- JS PLUGINS -->
+  <!-- Required plugins -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
+
+  <!-- JS THIRD PARTY PLUGINS -->
+  <!-- Google Analytics. Global site tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B73TDMXKF5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-B73TDMXKF5');
+  </script>
+</body>
+
+</html>
